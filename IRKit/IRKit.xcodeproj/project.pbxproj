@@ -1,0 +1,1766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C71B3F2C1875C2BE001CE2DA /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C71B3F2D1875C2BE001CE2DA /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				C71B3F321875C2E1001CE2DA /* ShellScript */,
+			);
+			dependencies = (
+				C71B3F341875C451001CE2DA /* PBXTargetDependency */,
+				C71B3F311875C2CB001CE2DA /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		56FE286A5AA37A562CB1084C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E99F009D3309AF0F309E7D /* libPods.a */; };
+		9015C939E7A729CAD848D170 /* libPods-IRKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEDD2CC6F3E254B432C1FDF /* libPods-IRKit.a */; };
+		C701BEBC182B9F5C00C31F4B /* IRWifiSecuritySelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C701BEBB182B9F5C00C31F4B /* IRWifiSecuritySelectViewController.xib */; };
+		C701BEBF182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C701BEBD182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.m */; };
+		C701BEC2182BA72C00C31F4B /* IRKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = C701BEC1182BA72C00C31F4B /* IRKeys.m */; };
+		C703E828183DFA6900B8446C /* IRHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C703E827183DFA6900B8446C /* IRHTTPClient.m */; };
+		C703E82A183E0DD900B8446C /* CRC8.c in Sources */ = {isa = PBXBuildFile; fileRef = C703E829183E0DD900B8446C /* CRC8.c */; };
+		C7040C7918B36295006BEDAC /* IRSignalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7040C7818B36295006BEDAC /* IRSignalsTests.m */; };
+		C704474518D5F7B600B73810 /* IRProgressView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C772C4D118D5E59100EF819D /* IRProgressView.h */; };
+		C707ECCF184C7C6E00AC5F0B /* icn_navibar_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C707ECC9184C7C6D00AC5F0B /* icn_navibar_menu@2x.png */; };
+		C707ECD0184C7C6E00AC5F0B /* icn_check2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C707ECCA184C7C6D00AC5F0B /* icn_check2@2x.png */; };
+		C707ECD1184C7C6E00AC5F0B /* icn_navibar_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C707ECCB184C7C6D00AC5F0B /* icn_navibar_add@2x.png */; };
+		C707ECD2184C7C6E00AC5F0B /* icn_navibar_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C707ECCC184C7C6D00AC5F0B /* icn_navibar_back@2x.png */; };
+		C707ECD3184C7C6E00AC5F0B /* icn_navibar_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C707ECCD184C7C6D00AC5F0B /* icn_navibar_cancel@2x.png */; };
+		C707ECD4184C7C6E00AC5F0B /* icn_navibar_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C707ECCE184C7C6E00AC5F0B /* icn_navibar_camera@2x.png */; };
+		C71B3F2B1875C279001CE2DA /* IRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C752D70617462C7B008B644A /* IRKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C71B7C5D18443633009F8D20 /* IRSearcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C79C5947183F5E49002136CD /* IRSearcher.h */; };
+		C720E6EC18B2108A009A5AB1 /* IRSignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C720E6EB18B2108A009A5AB1 /* IRSignalTests.m */; };
+		C720E6ED18B21194009A5AB1 /* libIRKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C752D6FE17462C7B008B644A /* libIRKit.a */; };
+		C720E6EE18B211AB009A5AB1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CF06518506D7E0086ED4F /* MediaPlayer.framework */; };
+		C720E6EF18B211B2009A5AB1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CF061185061180086ED4F /* SystemConfiguration.framework */; };
+		C720E6F018B211C4009A5AB1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AB0524180ADD40007288EB /* AudioToolbox.framework */; };
+		C720E6F118B211C9009A5AB1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0560F18041E3F00660217 /* AVFoundation.framework */; };
+		C720E6F218B211D5009A5AB1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B741B81803FA22005802A7 /* libc++.dylib */; };
+		C720E6F318B211DA009A5AB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CFC8717A6671200870A1B /* QuartzCore.framework */; };
+		C720E6F418B211E4009A5AB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79DE3B1176F20A30088679E /* CoreGraphics.framework */; };
+		C720E6F618B21244009A5AB1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C720E6F518B21244009A5AB1 /* libPods.a */; };
+		C720E6F818B21265009A5AB1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C720E6F718B21265009A5AB1 /* CoreTelephony.framework */; };
+		C721651D18521C80000BD43D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C721651B18521C80000BD43D /* Localizable.strings */; };
+		C727C87718B5DE8300867C1A /* IRSignalSequenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C727C87618B5DE8300867C1A /* IRSignalSequenceTests.m */; };
+		C727C87A18B5DEEE00867C1A /* IRSignalSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = C727C87818B5DEEE00867C1A /* IRSignalSequence.h */; };
+		C727C87B18B5DEEE00867C1A /* IRSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = C727C87918B5DEEE00867C1A /* IRSignalSequence.m */; };
+		C727C87E18B5E37B00867C1A /* XCTestCase+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = C727C87C18B5E37B00867C1A /* XCTestCase+Async.m */; };
+		C72A4FF71A277D1C00369B4F /* IRPersistentStore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7B1A38718EEA79500EFB915 /* IRPersistentStore.h */; };
+		C72A4FF81A277D2700369B4F /* IRSignalSequence.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C727C87818B5DEEE00867C1A /* IRSignalSequence.h */; };
+		C72A4FF91A277D3300369B4F /* IRPeripheralCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C75B5681174A405B00FFE5CB /* IRPeripheralCell.h */; };
+		C735040E17A029C30057D51B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79DE3B3176F20B50088679E /* UIKit.framework */; };
+		C735040F17A029C30057D51B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C752D70117462C7B008B644A /* Foundation.framework */; };
+		C735041017A029C30057D51B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79DE3B1176F20A30088679E /* CoreGraphics.framework */; };
+		C735041617A029C40057D51B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C735041417A029C40057D51B /* InfoPlist.strings */; };
+		C735041817A029C40057D51B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C735041717A029C40057D51B /* main.m */; };
+		C735041C17A029C40057D51B /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C735041B17A029C40057D51B /* IRAppDelegate.m */; };
+		C735041E17A029C40057D51B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C735041D17A029C40057D51B /* Default.png */; };
+		C735042017A029C40057D51B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C735041F17A029C40057D51B /* Default@2x.png */; };
+		C735042217A029C40057D51B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C735042117A029C40057D51B /* Default-568h@2x.png */; };
+		C735042517A029C40057D51B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735042317A029C40057D51B /* MainStoryboard.storyboard */; };
+		C735042E17A02B0D0057D51B /* IRSamplesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C735042D17A02B0D0057D51B /* IRSamplesTableViewController.m */; };
+		C735043217A030A60057D51B /* libIRKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C752D6FE17462C7B008B644A /* libIRKit.a */; };
+		C735043517A0341D0057D51B /* IRKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C79DE3B9176F25260088679E /* IRKit.bundle */; };
+		C73E37E4174DB9AE00872C04 /* IRUserDefaultsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E37E3174DB9AE00872C04 /* IRUserDefaultsStore.m */; };
+		C73E37E7174DF20300872C04 /* IRHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E37E6174DF20300872C04 /* IRHelper.m */; };
+		C751C38B18C888A900F3DD81 /* img_connect_02_jp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C751C38918C888A900F3DD81 /* img_connect_02_jp@2x.png */; };
+		C751C38C18C888A900F3DD81 /* img_connect_01_jp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C751C38A18C888A900F3DD81 /* img_connect_01_jp@2x.png */; };
+		C752D70217462C7B008B644A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C752D70117462C7B008B644A /* Foundation.framework */; };
+		C752D70717462C7B008B644A /* IRKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C752D70617462C7B008B644A /* IRKit.h */; };
+		C752D70917462C7B008B644A /* IRKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C752D70817462C7B008B644A /* IRKit.m */; };
+		C7554F1B1749D61A00BDF920 /* IRConst.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7FAB0251746889000125BCB /* IRConst.h */; };
+		C7554F321749E65B00BDF920 /* IRPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554F311749E65B00BDF920 /* IRPeripheral.m */; };
+		C7554F421749F2E000BDF920 /* IRPeripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554F411749F2E000BDF920 /* IRPeripherals.m */; };
+		C75B5682174A405B00FFE5CB /* IRPeripheralCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C75B5680174A405B00FFE5CB /* IRPeripheralCell.m */; };
+		C75B5685174A79DD00FFE5CB /* IRPeripherals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7554F401749F2E000BDF920 /* IRPeripherals.h */; };
+		C75B568A174A7AB200FFE5CB /* IRSignals.m in Sources */ = {isa = PBXBuildFile; fileRef = C75B5686174A7AB100FFE5CB /* IRSignals.m */; };
+		C75B568B174A7AB200FFE5CB /* IRSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = C75B5688174A7AB200FFE5CB /* IRSignal.m */; };
+		C75B568C174A7B1F00FFE5CB /* IRSignals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C75B5687174A7AB100FFE5CB /* IRSignals.h */; };
+		C75CF062185061180086ED4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CF061185061180086ED4F /* SystemConfiguration.framework */; };
+		C75CF064185062600086ED4F /* img_powerup3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C75CF063185062600086ED4F /* img_powerup3@2x.png */; };
+		C75CF06618506D7E0086ED4F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CF06518506D7E0086ED4F /* MediaPlayer.framework */; };
+		C75CFC8617A65E1C00870A1B /* IRPeripheralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C75CFC8517A65E1C00870A1B /* IRPeripheralCell.xib */; };
+		C75CFC8817A6671200870A1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75CFC8717A6671200870A1B /* QuartzCore.framework */; };
+		C7603E7D17A8B48600A7AF1E /* IRHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C73E37E5174DF20300872C04 /* IRHelper.h */; };
+		C7603E8417A8BC6F00A7AF1E /* IRViewCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7603E8317A8BC6F00A7AF1E /* IRViewCustomizer.m */; };
+		C7603E8B17A9FAE100A7AF1E /* IRSignalNameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7603E8917A9FAE000A7AF1E /* IRSignalNameEditViewController.m */; };
+		C7603E8C17A9FED700A7AF1E /* IRSignalNameEditViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7603E8A17A9FAE000A7AF1E /* IRSignalNameEditViewController.h */; };
+		C763C6B31839ACC500D1D155 /* IRWifiEditViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C78F6FE0182B8134002AAC7B /* IRWifiEditViewController.h */; };
+		C763C6B41839ACDE00D1D155 /* IRWifiSecuritySelectViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C701BEBE182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.h */; };
+		C763C6B51839ACEC00D1D155 /* IRKeys.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C701BEC0182BA72C00C31F4B /* IRKeys.h */; };
+		C7693F8717A12AF900EC43FC /* icn_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7693F8517A12AF900EC43FC /* icn_arrow@2x.png */; };
+		C76CCA8018EAD53200644C0E /* IRViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C76CCA7E18EAD53200644C0E /* IRViewHelper.h */; };
+		C76CCA8118EAD53200644C0E /* IRViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CCA7F18EAD53200644C0E /* IRViewHelper.m */; };
+		C76CCA8418EAD5BE00644C0E /* IRPeripherals+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C76CCA8218EAD5BE00644C0E /* IRPeripherals+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C76CCA8518EAD5BE00644C0E /* IRPeripherals+UIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CCA8318EAD5BE00644C0E /* IRPeripherals+UIKit.m */; };
+		C76CCA8618EADB1F00644C0E /* IRPeripherals+UIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76CCA8218EAD5BE00644C0E /* IRPeripherals+UIKit.h */; };
+		C77150EF17728F9C004F9FE3 /* IRPeripheralNameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77150ED17728F9C004F9FE3 /* IRPeripheralNameEditViewController.m */; };
+		C77150F31772D681004F9FE3 /* IRSignal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C75B5689174A7AB200FFE5CB /* IRSignal.h */; };
+		C77150F91772DF4A004F9FE3 /* IRNewSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77150F71772DF4A004F9FE3 /* IRNewSignalViewController.m */; };
+		C772C4D018D5E53E00EF819D /* IRProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C772C4CF18D5E53E00EF819D /* IRProgressView.xib */; };
+		C772C4D318D5E59100EF819D /* IRProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = C772C4D118D5E59100EF819D /* IRProgressView.h */; };
+		C772C4D418D5E59100EF819D /* IRProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C772C4D218D5E59100EF819D /* IRProgressView.m */; };
+		C77E1977187859D700B457C3 /* IRGuideWifiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C77E1975187859D700B457C3 /* IRGuideWifiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C77E1978187859D700B457C3 /* IRGuideWifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77E1976187859D700B457C3 /* IRGuideWifiViewController.m */; };
+		C77E197918785D2D00B457C3 /* IRGuideWifiViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C77E1975187859D700B457C3 /* IRGuideWifiViewController.h */; };
+		C77E1980187861F000B457C3 /* IRGuideWifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77E1982187861F000B457C3 /* IRGuideWifiViewController.xib */; };
+		C78B777A18D73BE90049C526 /* IRReachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7BD941A18D7024F008C9C72 /* IRReachability.h */; };
+		C78EA54818F6B68100987A25 /* IRFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78EA54718F6B68100987A25 /* IRFAQViewController.xib */; };
+		C78EA54B18F6B7CA00987A25 /* IRFAQViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C78EA54918F6B7CA00987A25 /* IRFAQViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C78EA54C18F6B7CA00987A25 /* IRFAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78EA54A18F6B7CA00987A25 /* IRFAQViewController.m */; };
+		C78F6FE1182B8134002AAC7B /* IRWifiEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78F6FDF182B8134002AAC7B /* IRWifiEditViewController.m */; };
+		C78F6FE6182B8D89002AAC7B /* IREditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78F6FE5182B8D89002AAC7B /* IREditCell.xib */; };
+		C78F6FE9182B8E77002AAC7B /* IREditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C78F6FE7182B8E77002AAC7B /* IREditCell.m */; };
+		C79B7B3618F6C12A00E4CC34 /* IRFAQViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C78EA54918F6B7CA00987A25 /* IRFAQViewController.h */; };
+		C79C5949183F5E49002136CD /* IRSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C79C5948183F5E49002136CD /* IRSearcher.m */; };
+		C79CCB62185356EA00ECB707 /* anime_20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB4E185356EA00ECB707 /* anime_20@2x.png */; };
+		C79CCB63185356EA00ECB707 /* anime_19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB4F185356EA00ECB707 /* anime_19@2x.png */; };
+		C79CCB64185356EA00ECB707 /* anime_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB50185356EA00ECB707 /* anime_18@2x.png */; };
+		C79CCB65185356EA00ECB707 /* anime_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB51185356EA00ECB707 /* anime_17@2x.png */; };
+		C79CCB66185356EA00ECB707 /* anime_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB52185356EA00ECB707 /* anime_16@2x.png */; };
+		C79CCB67185356EA00ECB707 /* anime_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB53185356EA00ECB707 /* anime_15@2x.png */; };
+		C79CCB68185356EA00ECB707 /* anime_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB54185356EA00ECB707 /* anime_14@2x.png */; };
+		C79CCB69185356EA00ECB707 /* anime_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB55185356EA00ECB707 /* anime_13@2x.png */; };
+		C79CCB6A185356EA00ECB707 /* anime_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB56185356EA00ECB707 /* anime_12@2x.png */; };
+		C79CCB6B185356EA00ECB707 /* anime_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB57185356EA00ECB707 /* anime_11@2x.png */; };
+		C79CCB6C185356EA00ECB707 /* anime_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB58185356EA00ECB707 /* anime_10@2x.png */; };
+		C79CCB6D185356EA00ECB707 /* anime_08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB59185356EA00ECB707 /* anime_08@2x.png */; };
+		C79CCB6E185356EA00ECB707 /* anime_09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB5A185356EA00ECB707 /* anime_09@2x.png */; };
+		C79CCB6F185356EA00ECB707 /* anime_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB5B185356EA00ECB707 /* anime_07@2x.png */; };
+		C79CCB70185356EA00ECB707 /* anime_06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB5C185356EA00ECB707 /* anime_06@2x.png */; };
+		C79CCB71185356EA00ECB707 /* anime_05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB5D185356EA00ECB707 /* anime_05@2x.png */; };
+		C79CCB72185356EA00ECB707 /* anime_04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB5E185356EA00ECB707 /* anime_04@2x.png */; };
+		C79CCB73185356EA00ECB707 /* anime_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB5F185356EA00ECB707 /* anime_03@2x.png */; };
+		C79CCB74185356EA00ECB707 /* anime_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB60185356EA00ECB707 /* anime_02@2x.png */; };
+		C79CCB75185356EA00ECB707 /* anime_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79CCB61185356EA00ECB707 /* anime_01@2x.png */; };
+		C7A1350417AA5D3A00C8679B /* icn_signal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A1350217AA5D3A00C8679B /* icn_signal@2x.png */; };
+		C7A1350517AA5D3A00C8679B /* icn_signal.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A1350317AA5D3A00C8679B /* icn_signal.png */; };
+		C7A1350817AA5D7300C8679B /* icn_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A1350617AA5D7300C8679B /* icn_device@2x.png */; };
+		C7A1351217AA621B00C8679B /* IRViewCustomizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7603E8217A8BC6F00A7AF1E /* IRViewCustomizer.h */; };
+		C7A1378E18D6C688000FD522 /* bg_progress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7A1378D18D6C688000FD522 /* bg_progress@2x.png */; };
+		C7A66E9017A7BB3B00EDE589 /* IRSignalSendOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A66E8D17A7BB3A00EDE589 /* IRSignalSendOperationQueue.m */; };
+		C7AB0525180ADD40007288EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AB0524180ADD40007288EB /* AudioToolbox.framework */; };
+		C7AB418C179530D300E934C3 /* IRNewSignalScene1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB418B179530D300E934C3 /* IRNewSignalScene1ViewController.m */; };
+		C7AB418D179532F500E934C3 /* IRNewSignalScene1ViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7AB418A179530D300E934C3 /* IRNewSignalScene1ViewController.h */; };
+		C7AC32121850A64200BB190D /* img_remote3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7AC32111850A64200BB190D /* img_remote3@2x.png */; };
+		C7AFAB5918EEB085001F4C87 /* IRKit+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AFAB5718EEB085001F4C87 /* IRKit+Internal.h */; };
+		C7AFAB5A18EEB085001F4C87 /* IRKit+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AFAB5818EEB085001F4C87 /* IRKit+Internal.m */; };
+		C7B4EBD518C715C500AB2E46 /* img_connect_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B4EBD118C715C500AB2E46 /* img_connect_01@2x.png */; };
+		C7B4EBD618C715C500AB2E46 /* img_connect_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B4EBD218C715C500AB2E46 /* img_connect_02@2x.png */; };
+		C7B4EBD718C715C500AB2E46 /* icn_chart_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B4EBD318C715C500AB2E46 /* icn_chart_02@2x.png */; };
+		C7B4EBD818C715C500AB2E46 /* icn_chart_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B4EBD418C715C500AB2E46 /* icn_chart_01@2x.png */; };
+		C7B544F118EBDD9200B54504 /* IRHTTPClient+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B544EF18EBDD9200B54504 /* IRHTTPClient+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7B544F218EBDD9200B54504 /* IRHTTPClient+UIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B544F018EBDD9200B54504 /* IRHTTPClient+UIKit.m */; };
+		C7B544F318EBDFFC00B54504 /* IRHTTPClient+UIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7B544EF18EBDD9200B54504 /* IRHTTPClient+UIKit.h */; };
+		C7B5495C17ABD5DA005D91D1 /* IRSignalSendOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5495A17ABD5DA005D91D1 /* IRSignalSendOperation.m */; };
+		C7B5495D17ABD873005D91D1 /* IRSignalSendOperationQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7A66E8E17A7BB3A00EDE589 /* IRSignalSendOperationQueue.h */; };
+		C7B5495E17ABD873005D91D1 /* IRSignalSendOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7B5495B17ABD5DA005D91D1 /* IRSignalSendOperation.h */; };
+		C7B5734A18B594E900949D12 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C720E6F718B21265009A5AB1 /* CoreTelephony.framework */; };
+		C7B741BA1803FA41005802A7 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B741B81803FA22005802A7 /* libc++.dylib */; };
+		C7BD941C18D7024F008C9C72 /* IRReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BD941A18D7024F008C9C72 /* IRReachability.h */; };
+		C7BD941D18D7024F008C9C72 /* IRReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BD941B18D7024F008C9C72 /* IRReachability.m */; };
+		C7C397DE1756507800868B79 /* IRPeripheral.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7554F301749E65B00BDF920 /* IRPeripheral.h */; };
+		C7C7A307176EFC6C00C9A62F /* IRNewPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C7A305176EFC6C00C9A62F /* IRNewPeripheralViewController.m */; };
+		C7C7A30B176F017600C9A62F /* IRNewPeripheralViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7C7A306176EFC6C00C9A62F /* IRNewPeripheralViewController.h */; };
+		C7C7A30E176F05C500C9A62F /* IRGuidePowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C7A30C176F05C500C9A62F /* IRGuidePowerViewController.m */; };
+		C7CEF3B9186172DB00B665DA /* IRHTTPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CEF3B8186172DB00B665DA /* IRHTTPOperationQueue.m */; };
+		C7D0561118041E4F00660217 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0560F18041E3F00660217 /* AVFoundation.framework */; };
+		C7E07C5B1875D3BE00901967 /* IRSignalSendOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A66E8E17A7BB3A00EDE589 /* IRSignalSendOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C5C1875D3BE00901967 /* IRSignalSendOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B5495B17ABD5DA005D91D1 /* IRSignalSendOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C611875D3BE00901967 /* IRHTTPJSONOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFC7C6184CCE790007B178 /* IRHTTPJSONOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C621875D3BE00901967 /* IRHTTPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C7CEF3B7186172DB00B665DA /* IRHTTPOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C631875D3BE00901967 /* IRNewSignalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C77150F81772DF4A004F9FE3 /* IRNewSignalViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C641875D3BE00901967 /* IRNewSignalScene1ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AB418A179530D300E934C3 /* IRNewSignalScene1ViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C651875D3BE00901967 /* IRSignalNameEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7603E8A17A9FAE000A7AF1E /* IRSignalNameEditViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C661875D3BE00901967 /* IRNewPeripheralViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C7A306176EFC6C00C9A62F /* IRNewPeripheralViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C671875D3BE00901967 /* IRGuidePowerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C7A30D176F05C500C9A62F /* IRGuidePowerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C681875D3BE00901967 /* IRWifiEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C78F6FE0182B8134002AAC7B /* IRWifiEditViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C691875D3BE00901967 /* IRWifiSecuritySelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C701BEBE182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C6C1875D3BE00901967 /* IRPeripheralNameEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C77150EE17728F9C004F9FE3 /* IRPeripheralNameEditViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C6D1875D3BE00901967 /* IREditCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C78F6FE8182B8E77002AAC7B /* IREditCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C6E1875D3BE00901967 /* IRPeripheralCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C75B5681174A405B00FFE5CB /* IRPeripheralCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C6F1875D3BE00901967 /* IRViewCustomizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C7603E8217A8BC6F00A7AF1E /* IRViewCustomizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C701875D3BE00901967 /* IRSignals.h in Headers */ = {isa = PBXBuildFile; fileRef = C75B5687174A7AB100FFE5CB /* IRSignals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C711875D3BE00901967 /* IRSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = C75B5689174A7AB200FFE5CB /* IRSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C721875D3BE00901967 /* IRPeripherals.h in Headers */ = {isa = PBXBuildFile; fileRef = C7554F401749F2E000BDF920 /* IRPeripherals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C731875D3BE00901967 /* IRPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = C7554F301749E65B00BDF920 /* IRPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C751875D3BE00901967 /* IRConst.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FAB0251746889000125BCB /* IRConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C761875D3BE00901967 /* IRUserDefaultsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = C73E37E2174DB9AE00872C04 /* IRUserDefaultsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C771875D3BE00901967 /* IRHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C73E37E5174DF20300872C04 /* IRHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C781875D3BE00901967 /* IRKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = C701BEC0182BA72C00C31F4B /* IRKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C791875D3BE00901967 /* IRHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C703E826183DFA6900B8446C /* IRHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C7A1875D3BE00901967 /* CRC8.h in Headers */ = {isa = PBXBuildFile; fileRef = C703E82B183E0DF600B8446C /* CRC8.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C7B1875D3BE00901967 /* IRSearcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C79C5947183F5E49002136CD /* IRSearcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E07C7C1875D3BE00901967 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FAB02017467CBF00125BCB /* Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E2126C18D6F4B900D1059E /* IRReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E2126B18D6F4B900D1059E /* IRReachabilityTests.m */; };
+		C7E4E31D18520C6B00EC864E /* IRGuidePowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E4E31F18520C6B00EC864E /* IRGuidePowerViewController.xib */; };
+		C7E4E32618520C9D00EC864E /* IRNewSignalScene1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E4E32818520C9D00EC864E /* IRNewSignalScene1ViewController.xib */; };
+		C7E4E32918520CA300EC864E /* IRPeripheralNameEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E4E32B18520CA300EC864E /* IRPeripheralNameEditViewController.xib */; };
+		C7E4E32C18520CA700EC864E /* IRSignalNameEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E4E32E18520CA700EC864E /* IRSignalNameEditViewController.xib */; };
+		C7E4E32F18520CAB00EC864E /* IRWifiEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E4E33118520CAB00EC864E /* IRWifiEditViewController.xib */; };
+		C7E4EBA418B20EB5008711EF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E4EB9D18B20E44008711EF /* XCTest.framework */; };
+		C7E4EBA518B20EB5008711EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C752D70117462C7B008B644A /* Foundation.framework */; };
+		C7E4EBA618B20EB5008711EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79DE3B3176F20B50088679E /* UIKit.framework */; };
+		C7E4EBAC18B20EB5008711EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7E4EBAA18B20EB5008711EF /* InfoPlist.strings */; };
+		C7E4EBAE18B20EB5008711EF /* IRKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4EBAD18B20EB5008711EF /* IRKitTests.m */; };
+		C7EF92E317794D4A00D07D81 /* IRNewSignalViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C77150F81772DF4A004F9FE3 /* IRNewSignalViewController.h */; };
+		C7EF92E417797DCE00D07D81 /* IRPeripheralNameEditViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C77150EE17728F9C004F9FE3 /* IRPeripheralNameEditViewController.h */; };
+		C7EF92E617797DCE00D07D81 /* IRGuidePowerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7C7A30D176F05C500C9A62F /* IRGuidePowerViewController.h */; };
+		C7FAB02217467CBF00125BCB /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FAB02117467CBF00125BCB /* Log.m */; };
+		C7FFC7C8184CCE790007B178 /* IRHTTPJSONOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FFC7C7184CCE790007B178 /* IRHTTPJSONOperation.m */; };
+		D5A83E32CFF843C3BC37FA0F /* libPods-IRKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1421C9FA864A43B9FEE98B /* libPods-IRKitTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C71B3F301875C2CB001CE2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C752D6F617462C7B008B644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C752D6FD17462C7B008B644A;
+			remoteInfo = IRKit;
+		};
+		C71B3F331875C451001CE2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C752D6F617462C7B008B644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C79DE3B8176F25260088679E;
+			remoteInfo = IRKitResources;
+		};
+		C735043817A038FB0057D51B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C752D6F617462C7B008B644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C79DE3B8176F25260088679E;
+			remoteInfo = IRKitResources;
+		};
+		C7526FA918C75D80000A3F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C752D6F617462C7B008B644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C752D6FD17462C7B008B644A;
+			remoteInfo = IRKit;
+		};
+		C79DE3C8176F271A0088679E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C752D6F617462C7B008B644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C79DE3B8176F25260088679E;
+			remoteInfo = IRKitResources;
+		};
+		C7E4EBB018B20EB5008711EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C752D6F617462C7B008B644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C752D6FD17462C7B008B644A;
+			remoteInfo = IRKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C752D6FC17462C7B008B644A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				C72A4FF91A277D3300369B4F /* IRPeripheralCell.h in CopyFiles */,
+				C72A4FF81A277D2700369B4F /* IRSignalSequence.h in CopyFiles */,
+				C72A4FF71A277D1C00369B4F /* IRPersistentStore.h in CopyFiles */,
+				C79B7B3618F6C12A00E4CC34 /* IRFAQViewController.h in CopyFiles */,
+				C7B544F318EBDFFC00B54504 /* IRHTTPClient+UIKit.h in CopyFiles */,
+				C76CCA8618EADB1F00644C0E /* IRPeripherals+UIKit.h in CopyFiles */,
+				C78B777A18D73BE90049C526 /* IRReachability.h in CopyFiles */,
+				C704474518D5F7B600B73810 /* IRProgressView.h in CopyFiles */,
+				C77E197918785D2D00B457C3 /* IRGuideWifiViewController.h in CopyFiles */,
+				C71B7C5D18443633009F8D20 /* IRSearcher.h in CopyFiles */,
+				C763C6B51839ACEC00D1D155 /* IRKeys.h in CopyFiles */,
+				C763C6B41839ACDE00D1D155 /* IRWifiSecuritySelectViewController.h in CopyFiles */,
+				C763C6B31839ACC500D1D155 /* IRWifiEditViewController.h in CopyFiles */,
+				C7B5495D17ABD873005D91D1 /* IRSignalSendOperationQueue.h in CopyFiles */,
+				C7B5495E17ABD873005D91D1 /* IRSignalSendOperation.h in CopyFiles */,
+				C7A1351217AA621B00C8679B /* IRViewCustomizer.h in CopyFiles */,
+				C7603E8C17A9FED700A7AF1E /* IRSignalNameEditViewController.h in CopyFiles */,
+				C7603E7D17A8B48600A7AF1E /* IRHelper.h in CopyFiles */,
+				C7AB418D179532F500E934C3 /* IRNewSignalScene1ViewController.h in CopyFiles */,
+				C7EF92E417797DCE00D07D81 /* IRPeripheralNameEditViewController.h in CopyFiles */,
+				C7EF92E617797DCE00D07D81 /* IRGuidePowerViewController.h in CopyFiles */,
+				C7EF92E317794D4A00D07D81 /* IRNewSignalViewController.h in CopyFiles */,
+				C77150F31772D681004F9FE3 /* IRSignal.h in CopyFiles */,
+				C7C7A30B176F017600C9A62F /* IRNewPeripheralViewController.h in CopyFiles */,
+				C7C397DE1756507800868B79 /* IRPeripheral.h in CopyFiles */,
+				C75B568C174A7B1F00FFE5CB /* IRSignals.h in CopyFiles */,
+				C75B5685174A79DD00FFE5CB /* IRPeripherals.h in CopyFiles */,
+				C7554F1B1749D61A00BDF920 /* IRConst.h in CopyFiles */,
+				C752D70717462C7B008B644A /* IRKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00F878B05C67F9BF54E9E7B3 /* Pods-IRKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRKitTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IRKitTests/Pods-IRKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D5ACDCE91F5EBAD599144C9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3E31DE5C5CF50CFF5C3EEA43 /* Pods-IRKitViewSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRKitViewSamples.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IRKitViewSamples/Pods-IRKitViewSamples.debug.xcconfig"; sourceTree = "<group>"; };
+		5D1421C9FA864A43B9FEE98B /* libPods-IRKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IRKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBBEFDB8DC13EAAD3FC68F7 /* Pods-IRKitViewSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRKitViewSamples.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IRKitViewSamples/Pods-IRKitViewSamples.release.xcconfig"; sourceTree = "<group>"; };
+		6DD118DA3E7228172FE7DD1E /* Pods-IRKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRKit.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IRKit/Pods-IRKit.debug.xcconfig"; sourceTree = "<group>"; };
+		7E2BC135F55832C5D0C833B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8D8F836D74F2E58D206B44EF /* Pods-IRKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRKit.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IRKit/Pods-IRKit.release.xcconfig"; sourceTree = "<group>"; };
+		8EEDD2CC6F3E254B432C1FDF /* libPods-IRKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IRKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3DB3D2F2D998FD2DB325D2 /* libPods-IRKitViewSamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IRKitViewSamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27309377994DCB43F160E52 /* Pods-IRKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRKitTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IRKitTests/Pods-IRKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C70088D0186170BC00A2C878 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C701BEBB182B9F5C00C31F4B /* IRWifiSecuritySelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRWifiSecuritySelectViewController.xib; sourceTree = "<group>"; };
+		C701BEBD182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRWifiSecuritySelectViewController.m; sourceTree = "<group>"; };
+		C701BEBE182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRWifiSecuritySelectViewController.h; sourceTree = "<group>"; };
+		C701BEC0182BA72C00C31F4B /* IRKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRKeys.h; sourceTree = "<group>"; };
+		C701BEC1182BA72C00C31F4B /* IRKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRKeys.m; sourceTree = "<group>"; };
+		C703E826183DFA6900B8446C /* IRHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRHTTPClient.h; sourceTree = "<group>"; };
+		C703E827183DFA6900B8446C /* IRHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRHTTPClient.m; sourceTree = "<group>"; };
+		C703E829183E0DD900B8446C /* CRC8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CRC8.c; sourceTree = "<group>"; };
+		C703E82B183E0DF600B8446C /* CRC8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRC8.h; sourceTree = "<group>"; };
+		C7040C7818B36295006BEDAC /* IRSignalsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalsTests.m; sourceTree = "<group>"; };
+		C707ECC9184C7C6D00AC5F0B /* icn_navibar_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_navibar_menu@2x.png"; sourceTree = "<group>"; };
+		C707ECCA184C7C6D00AC5F0B /* icn_check2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_check2@2x.png"; sourceTree = "<group>"; };
+		C707ECCB184C7C6D00AC5F0B /* icn_navibar_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_navibar_add@2x.png"; sourceTree = "<group>"; };
+		C707ECCC184C7C6D00AC5F0B /* icn_navibar_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_navibar_back@2x.png"; sourceTree = "<group>"; };
+		C707ECCD184C7C6D00AC5F0B /* icn_navibar_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_navibar_cancel@2x.png"; sourceTree = "<group>"; };
+		C707ECCE184C7C6E00AC5F0B /* icn_navibar_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_navibar_camera@2x.png"; sourceTree = "<group>"; };
+		C714890E17C46D6E00713890 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		C720E6EB18B2108A009A5AB1 /* IRSignalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalTests.m; sourceTree = "<group>"; };
+		C720E6F518B21244009A5AB1 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		C720E6F718B21265009A5AB1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C721651C18521C80000BD43D /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C727C87618B5DE8300867C1A /* IRSignalSequenceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalSequenceTests.m; sourceTree = "<group>"; };
+		C727C87818B5DEEE00867C1A /* IRSignalSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSignalSequence.h; sourceTree = "<group>"; };
+		C727C87918B5DEEE00867C1A /* IRSignalSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalSequence.m; sourceTree = "<group>"; };
+		C727C87C18B5E37B00867C1A /* XCTestCase+Async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Async.m"; sourceTree = "<group>"; };
+		C727C87D18B5E37B00867C1A /* XCTestCase+Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Async.h"; sourceTree = "<group>"; };
+		C727C87F18B5E6A700867C1A /* IRKitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRKitTests.h; sourceTree = "<group>"; };
+		C735040D17A029C30057D51B /* IRKitViewSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRKitViewSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C735041317A029C30057D51B /* IRKitViewSamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRKitViewSamples-Info.plist"; sourceTree = "<group>"; };
+		C735041517A029C40057D51B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C735041717A029C40057D51B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C735041917A029C40057D51B /* IRKitViewSamples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRKitViewSamples-Prefix.pch"; sourceTree = "<group>"; };
+		C735041A17A029C40057D51B /* IRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRAppDelegate.h; sourceTree = "<group>"; };
+		C735041B17A029C40057D51B /* IRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
+		C735041D17A029C40057D51B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C735041F17A029C40057D51B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C735042117A029C40057D51B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C735042C17A02B0D0057D51B /* IRSamplesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSamplesTableViewController.h; sourceTree = "<group>"; };
+		C735042D17A02B0D0057D51B /* IRSamplesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSamplesTableViewController.m; sourceTree = "<group>"; };
+		C73E37E2174DB9AE00872C04 /* IRUserDefaultsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRUserDefaultsStore.h; sourceTree = "<group>"; };
+		C73E37E3174DB9AE00872C04 /* IRUserDefaultsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRUserDefaultsStore.m; sourceTree = "<group>"; };
+		C73E37E5174DF20300872C04 /* IRHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRHelper.h; sourceTree = "<group>"; };
+		C73E37E6174DF20300872C04 /* IRHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRHelper.m; sourceTree = "<group>"; };
+		C751C38818C8867E00F3DD81 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/IRGuideWifiViewController.xib; sourceTree = "<group>"; };
+		C751C38918C888A900F3DD81 /* img_connect_02_jp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_connect_02_jp@2x.png"; sourceTree = "<group>"; };
+		C751C38A18C888A900F3DD81 /* img_connect_01_jp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_connect_01_jp@2x.png"; sourceTree = "<group>"; };
+		C752D6FE17462C7B008B644A /* libIRKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIRKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C752D70117462C7B008B644A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C752D70517462C7B008B644A /* IRKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRKit-Prefix.pch"; sourceTree = "<group>"; };
+		C752D70617462C7B008B644A /* IRKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRKit.h; sourceTree = "<group>"; };
+		C752D70817462C7B008B644A /* IRKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRKit.m; sourceTree = "<group>"; };
+		C752D71017462C7B008B644A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7554F301749E65B00BDF920 /* IRPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPeripheral.h; sourceTree = "<group>"; };
+		C7554F311749E65B00BDF920 /* IRPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPeripheral.m; sourceTree = "<group>"; };
+		C7554F401749F2E000BDF920 /* IRPeripherals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPeripherals.h; sourceTree = "<group>"; };
+		C7554F411749F2E000BDF920 /* IRPeripherals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPeripherals.m; sourceTree = "<group>"; };
+		C75AE4E419138774008F9A50 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/IRNewSignalScene1ViewController.xib; sourceTree = "<group>"; };
+		C75B5680174A405B00FFE5CB /* IRPeripheralCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPeripheralCell.m; sourceTree = "<group>"; };
+		C75B5681174A405B00FFE5CB /* IRPeripheralCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPeripheralCell.h; sourceTree = "<group>"; };
+		C75B5686174A7AB100FFE5CB /* IRSignals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignals.m; sourceTree = "<group>"; };
+		C75B5687174A7AB100FFE5CB /* IRSignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSignals.h; sourceTree = "<group>"; };
+		C75B5688174A7AB200FFE5CB /* IRSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignal.m; sourceTree = "<group>"; };
+		C75B5689174A7AB200FFE5CB /* IRSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSignal.h; sourceTree = "<group>"; };
+		C75CF061185061180086ED4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C75CF063185062600086ED4F /* img_powerup3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_powerup3@2x.png"; sourceTree = "<group>"; };
+		C75CF06518506D7E0086ED4F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C75CFC8517A65E1C00870A1B /* IRPeripheralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRPeripheralCell.xib; sourceTree = "<group>"; };
+		C75CFC8717A6671200870A1B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C7603E8217A8BC6F00A7AF1E /* IRViewCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRViewCustomizer.h; sourceTree = "<group>"; };
+		C7603E8317A8BC6F00A7AF1E /* IRViewCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRViewCustomizer.m; sourceTree = "<group>"; };
+		C7603E8917A9FAE000A7AF1E /* IRSignalNameEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalNameEditViewController.m; sourceTree = "<group>"; };
+		C7603E8A17A9FAE000A7AF1E /* IRSignalNameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSignalNameEditViewController.h; sourceTree = "<group>"; };
+		C7693F8517A12AF900EC43FC /* icn_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_arrow@2x.png"; sourceTree = "<group>"; };
+		C76CCA7E18EAD53200644C0E /* IRViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRViewHelper.h; sourceTree = "<group>"; };
+		C76CCA7F18EAD53200644C0E /* IRViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRViewHelper.m; sourceTree = "<group>"; };
+		C76CCA8218EAD5BE00644C0E /* IRPeripherals+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRPeripherals+UIKit.h"; sourceTree = "<group>"; };
+		C76CCA8318EAD5BE00644C0E /* IRPeripherals+UIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRPeripherals+UIKit.m"; sourceTree = "<group>"; };
+		C77150ED17728F9C004F9FE3 /* IRPeripheralNameEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPeripheralNameEditViewController.m; sourceTree = "<group>"; };
+		C77150EE17728F9C004F9FE3 /* IRPeripheralNameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPeripheralNameEditViewController.h; sourceTree = "<group>"; };
+		C77150F71772DF4A004F9FE3 /* IRNewSignalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNewSignalViewController.m; sourceTree = "<group>"; };
+		C77150F81772DF4A004F9FE3 /* IRNewSignalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNewSignalViewController.h; sourceTree = "<group>"; };
+		C772C4CF18D5E53E00EF819D /* IRProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRProgressView.xib; sourceTree = "<group>"; };
+		C772C4D118D5E59100EF819D /* IRProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRProgressView.h; sourceTree = "<group>"; };
+		C772C4D218D5E59100EF819D /* IRProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRProgressView.m; sourceTree = "<group>"; };
+		C7756777184B23A100C6D4DB /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../Debug-iphonesimulator/libPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77E1975187859D700B457C3 /* IRGuideWifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRGuideWifiViewController.h; sourceTree = "<group>"; };
+		C77E1976187859D700B457C3 /* IRGuideWifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRGuideWifiViewController.m; sourceTree = "<group>"; };
+		C77E1981187861F000B457C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IRGuideWifiViewController.xib; sourceTree = "<group>"; };
+		C780B3BB185715230023B745 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = ../Project.xcconfig; sourceTree = "<group>"; };
+		C78EA54718F6B68100987A25 /* IRFAQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRFAQViewController.xib; sourceTree = "<group>"; };
+		C78EA54918F6B7CA00987A25 /* IRFAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFAQViewController.h; sourceTree = "<group>"; };
+		C78EA54A18F6B7CA00987A25 /* IRFAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFAQViewController.m; sourceTree = "<group>"; };
+		C78F6FDF182B8134002AAC7B /* IRWifiEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRWifiEditViewController.m; sourceTree = "<group>"; };
+		C78F6FE0182B8134002AAC7B /* IRWifiEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRWifiEditViewController.h; sourceTree = "<group>"; };
+		C78F6FE5182B8D89002AAC7B /* IREditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IREditCell.xib; sourceTree = "<group>"; };
+		C78F6FE7182B8E77002AAC7B /* IREditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IREditCell.m; sourceTree = "<group>"; };
+		C78F6FE8182B8E77002AAC7B /* IREditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IREditCell.h; sourceTree = "<group>"; };
+		C79C5947183F5E49002136CD /* IRSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSearcher.h; sourceTree = "<group>"; };
+		C79C5948183F5E49002136CD /* IRSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSearcher.m; sourceTree = "<group>"; };
+		C79CCB4E185356EA00ECB707 /* anime_20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_20@2x.png"; sourceTree = "<group>"; };
+		C79CCB4F185356EA00ECB707 /* anime_19@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_19@2x.png"; sourceTree = "<group>"; };
+		C79CCB50185356EA00ECB707 /* anime_18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_18@2x.png"; sourceTree = "<group>"; };
+		C79CCB51185356EA00ECB707 /* anime_17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_17@2x.png"; sourceTree = "<group>"; };
+		C79CCB52185356EA00ECB707 /* anime_16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_16@2x.png"; sourceTree = "<group>"; };
+		C79CCB53185356EA00ECB707 /* anime_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_15@2x.png"; sourceTree = "<group>"; };
+		C79CCB54185356EA00ECB707 /* anime_14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_14@2x.png"; sourceTree = "<group>"; };
+		C79CCB55185356EA00ECB707 /* anime_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_13@2x.png"; sourceTree = "<group>"; };
+		C79CCB56185356EA00ECB707 /* anime_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_12@2x.png"; sourceTree = "<group>"; };
+		C79CCB57185356EA00ECB707 /* anime_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_11@2x.png"; sourceTree = "<group>"; };
+		C79CCB58185356EA00ECB707 /* anime_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_10@2x.png"; sourceTree = "<group>"; };
+		C79CCB59185356EA00ECB707 /* anime_08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_08@2x.png"; sourceTree = "<group>"; };
+		C79CCB5A185356EA00ECB707 /* anime_09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_09@2x.png"; sourceTree = "<group>"; };
+		C79CCB5B185356EA00ECB707 /* anime_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_07@2x.png"; sourceTree = "<group>"; };
+		C79CCB5C185356EA00ECB707 /* anime_06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_06@2x.png"; sourceTree = "<group>"; };
+		C79CCB5D185356EA00ECB707 /* anime_05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_05@2x.png"; sourceTree = "<group>"; };
+		C79CCB5E185356EA00ECB707 /* anime_04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_04@2x.png"; sourceTree = "<group>"; };
+		C79CCB5F185356EA00ECB707 /* anime_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_03@2x.png"; sourceTree = "<group>"; };
+		C79CCB60185356EA00ECB707 /* anime_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_02@2x.png"; sourceTree = "<group>"; };
+		C79CCB61185356EA00ECB707 /* anime_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anime_01@2x.png"; sourceTree = "<group>"; };
+		C79DE3B1176F20A30088679E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C79DE3B3176F20B50088679E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C79DE3B9176F25260088679E /* IRKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79DE3BD176F25260088679E /* IRKitResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRKitResources-Info.plist"; sourceTree = "<group>"; };
+		C7A1350217AA5D3A00C8679B /* icn_signal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_signal@2x.png"; sourceTree = "<group>"; };
+		C7A1350317AA5D3A00C8679B /* icn_signal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_signal.png; sourceTree = "<group>"; };
+		C7A1350617AA5D7300C8679B /* icn_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_device@2x.png"; sourceTree = "<group>"; };
+		C7A1378D18D6C688000FD522 /* bg_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_progress@2x.png"; sourceTree = "<group>"; };
+		C7A66E8D17A7BB3A00EDE589 /* IRSignalSendOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalSendOperationQueue.m; sourceTree = "<group>"; };
+		C7A66E8E17A7BB3A00EDE589 /* IRSignalSendOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSignalSendOperationQueue.h; sourceTree = "<group>"; };
+		C7AB0522180ADCEA007288EB /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		C7AB0524180ADD40007288EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C7AB418A179530D300E934C3 /* IRNewSignalScene1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNewSignalScene1ViewController.h; sourceTree = "<group>"; };
+		C7AB418B179530D300E934C3 /* IRNewSignalScene1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNewSignalScene1ViewController.m; sourceTree = "<group>"; };
+		C7AC32111850A64200BB190D /* img_remote3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_remote3@2x.png"; sourceTree = "<group>"; };
+		C7AFAB5718EEB085001F4C87 /* IRKit+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRKit+Internal.h"; sourceTree = "<group>"; };
+		C7AFAB5818EEB085001F4C87 /* IRKit+Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRKit+Internal.m"; sourceTree = "<group>"; };
+		C7B1A38718EEA79500EFB915 /* IRPersistentStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRPersistentStore.h; sourceTree = "<group>"; };
+		C7B4EBD118C715C500AB2E46 /* img_connect_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_connect_01@2x.png"; sourceTree = "<group>"; };
+		C7B4EBD218C715C500AB2E46 /* img_connect_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_connect_02@2x.png"; sourceTree = "<group>"; };
+		C7B4EBD318C715C500AB2E46 /* icn_chart_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_chart_02@2x.png"; sourceTree = "<group>"; };
+		C7B4EBD418C715C500AB2E46 /* icn_chart_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_chart_01@2x.png"; sourceTree = "<group>"; };
+		C7B544EF18EBDD9200B54504 /* IRHTTPClient+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRHTTPClient+UIKit.h"; sourceTree = "<group>"; };
+		C7B544F018EBDD9200B54504 /* IRHTTPClient+UIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRHTTPClient+UIKit.m"; sourceTree = "<group>"; };
+		C7B5495A17ABD5DA005D91D1 /* IRSignalSendOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSignalSendOperation.m; sourceTree = "<group>"; };
+		C7B5495B17ABD5DA005D91D1 /* IRSignalSendOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSignalSendOperation.h; sourceTree = "<group>"; };
+		C7B741B81803FA22005802A7 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		C7BD941A18D7024F008C9C72 /* IRReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRReachability.h; sourceTree = "<group>"; };
+		C7BD941B18D7024F008C9C72 /* IRReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRReachability.m; sourceTree = "<group>"; };
+		C7C7A305176EFC6C00C9A62F /* IRNewPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNewPeripheralViewController.m; sourceTree = "<group>"; };
+		C7C7A306176EFC6C00C9A62F /* IRNewPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNewPeripheralViewController.h; sourceTree = "<group>"; };
+		C7C7A30C176F05C500C9A62F /* IRGuidePowerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRGuidePowerViewController.m; sourceTree = "<group>"; };
+		C7C7A30D176F05C500C9A62F /* IRGuidePowerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRGuidePowerViewController.h; sourceTree = "<group>"; };
+		C7C7A317176F0FC400C9A62F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C7CEF3B7186172DB00B665DA /* IRHTTPOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRHTTPOperationQueue.h; sourceTree = "<group>"; };
+		C7CEF3B8186172DB00B665DA /* IRHTTPOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRHTTPOperationQueue.m; sourceTree = "<group>"; };
+		C7D0560F18041E3F00660217 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C7E2126B18D6F4B900D1059E /* IRReachabilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRReachabilityTests.m; sourceTree = "<group>"; };
+		C7E4E332185210BC00EC864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IRGuidePowerViewController.xib; sourceTree = "<group>"; };
+		C7E4E333185210BC00EC864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IRWifiEditViewController.xib; sourceTree = "<group>"; };
+		C7E4E336185210BC00EC864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IRPeripheralNameEditViewController.xib; sourceTree = "<group>"; };
+		C7E4E337185210BC00EC864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IRNewSignalScene1ViewController.xib; sourceTree = "<group>"; };
+		C7E4E338185210BC00EC864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IRSignalNameEditViewController.xib; sourceTree = "<group>"; };
+		C7E4E339185210BC00EC864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C7E4E33A185210C900EC864E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/IRGuidePowerViewController.strings; sourceTree = "<group>"; };
+		C7E4E33B185210C900EC864E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/IRWifiEditViewController.strings; sourceTree = "<group>"; };
+		C7E4E33E185210C900EC864E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/IRPeripheralNameEditViewController.strings; sourceTree = "<group>"; };
+		C7E4E340185210C900EC864E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/IRSignalNameEditViewController.strings; sourceTree = "<group>"; };
+		C7E4E341185210C900EC864E /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		C7E4E343185210C900EC864E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7E4EB9D18B20E44008711EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C7E4EBA318B20EB4008711EF /* IRKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IRKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E4EBA918B20EB5008711EF /* IRKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRKitTests-Info.plist"; sourceTree = "<group>"; };
+		C7E4EBAB18B20EB5008711EF /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7E4EBAD18B20EB5008711EF /* IRKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRKitTests.m; sourceTree = "<group>"; };
+		C7E4EBAF18B20EB5008711EF /* IRKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRKitTests-Prefix.pch"; sourceTree = "<group>"; };
+		C7E99F009D3309AF0F309E7D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FAB02017467CBF00125BCB /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		C7FAB02117467CBF00125BCB /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		C7FAB0251746889000125BCB /* IRConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRConst.h; sourceTree = "<group>"; };
+		C7FFC7C6184CCE790007B178 /* IRHTTPJSONOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRHTTPJSONOperation.h; sourceTree = "<group>"; };
+		C7FFC7C7184CCE790007B178 /* IRHTTPJSONOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRHTTPJSONOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C735040A17A029C30057D51B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B5734A18B594E900949D12 /* CoreTelephony.framework in Frameworks */,
+				C75CF06618506D7E0086ED4F /* MediaPlayer.framework in Frameworks */,
+				C75CF062185061180086ED4F /* SystemConfiguration.framework in Frameworks */,
+				C7AB0525180ADD40007288EB /* AudioToolbox.framework in Frameworks */,
+				C7D0561118041E4F00660217 /* AVFoundation.framework in Frameworks */,
+				C7B741BA1803FA41005802A7 /* libc++.dylib in Frameworks */,
+				C75CFC8817A6671200870A1B /* QuartzCore.framework in Frameworks */,
+				C735043217A030A60057D51B /* libIRKit.a in Frameworks */,
+				C735040E17A029C30057D51B /* UIKit.framework in Frameworks */,
+				C735040F17A029C30057D51B /* Foundation.framework in Frameworks */,
+				C735041017A029C30057D51B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C752D6FB17462C7B008B644A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C752D70217462C7B008B644A /* Foundation.framework in Frameworks */,
+				9015C939E7A729CAD848D170 /* libPods-IRKit.a in Frameworks */,
+				56FE286A5AA37A562CB1084C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79DE3B6176F25260088679E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E4EBA018B20EB4008711EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C720E6F818B21265009A5AB1 /* CoreTelephony.framework in Frameworks */,
+				C720E6F618B21244009A5AB1 /* libPods.a in Frameworks */,
+				C720E6F418B211E4009A5AB1 /* CoreGraphics.framework in Frameworks */,
+				C720E6F318B211DA009A5AB1 /* QuartzCore.framework in Frameworks */,
+				C720E6F218B211D5009A5AB1 /* libc++.dylib in Frameworks */,
+				C720E6F118B211C9009A5AB1 /* AVFoundation.framework in Frameworks */,
+				C720E6F018B211C4009A5AB1 /* AudioToolbox.framework in Frameworks */,
+				C720E6EF18B211B2009A5AB1 /* SystemConfiguration.framework in Frameworks */,
+				C720E6EE18B211AB009A5AB1 /* MediaPlayer.framework in Frameworks */,
+				C720E6ED18B21194009A5AB1 /* libIRKit.a in Frameworks */,
+				C7E4EBA418B20EB5008711EF /* XCTest.framework in Frameworks */,
+				C7E4EBA618B20EB5008711EF /* UIKit.framework in Frameworks */,
+				C7E4EBA518B20EB5008711EF /* Foundation.framework in Frameworks */,
+				D5A83E32CFF843C3BC37FA0F /* libPods-IRKitTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C727D2291754FBC20006810C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				C78F6FE7182B8E77002AAC7B /* IREditCell.m */,
+				C78F6FE8182B8E77002AAC7B /* IREditCell.h */,
+				C75B5680174A405B00FFE5CB /* IRPeripheralCell.m */,
+				C75B5681174A405B00FFE5CB /* IRPeripheralCell.h */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		C735041117A029C30057D51B /* IRKitViewSamples */ = {
+			isa = PBXGroup;
+			children = (
+				C735041A17A029C40057D51B /* IRAppDelegate.h */,
+				C735041B17A029C40057D51B /* IRAppDelegate.m */,
+				C735042C17A02B0D0057D51B /* IRSamplesTableViewController.h */,
+				C735042D17A02B0D0057D51B /* IRSamplesTableViewController.m */,
+				C735042317A029C40057D51B /* MainStoryboard.storyboard */,
+				C735041217A029C30057D51B /* Supporting Files */,
+			);
+			path = IRKitViewSamples;
+			sourceTree = "<group>";
+		};
+		C735041217A029C30057D51B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C735041317A029C30057D51B /* IRKitViewSamples-Info.plist */,
+				C735041417A029C40057D51B /* InfoPlist.strings */,
+				C735041717A029C40057D51B /* main.m */,
+				C735041917A029C40057D51B /* IRKitViewSamples-Prefix.pch */,
+				C735041D17A029C40057D51B /* Default.png */,
+				C735041F17A029C40057D51B /* Default@2x.png */,
+				C735042117A029C40057D51B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73CB4DB17856CD100B3F2C0 /* operation */ = {
+			isa = PBXGroup;
+			children = (
+				C7A66E8D17A7BB3A00EDE589 /* IRSignalSendOperationQueue.m */,
+				C7A66E8E17A7BB3A00EDE589 /* IRSignalSendOperationQueue.h */,
+				C7B5495A17ABD5DA005D91D1 /* IRSignalSendOperation.m */,
+				C7B5495B17ABD5DA005D91D1 /* IRSignalSendOperation.h */,
+				C7FFC7C6184CCE790007B178 /* IRHTTPJSONOperation.h */,
+				C7FFC7C7184CCE790007B178 /* IRHTTPJSONOperation.m */,
+				C7CEF3B7186172DB00B665DA /* IRHTTPOperationQueue.h */,
+				C7CEF3B8186172DB00B665DA /* IRHTTPOperationQueue.m */,
+			);
+			name = operation;
+			sourceTree = "<group>";
+		};
+		C752D6F517462C7B008B644A = {
+			isa = PBXGroup;
+			children = (
+				C752D70317462C7B008B644A /* IRKit */,
+				C79DE3BB176F25260088679E /* IRKitResources */,
+				C735041117A029C30057D51B /* IRKitViewSamples */,
+				C7E4EBA718B20EB5008711EF /* IRKitTests */,
+				C752D70017462C7B008B644A /* Frameworks */,
+				C752D6FF17462C7B008B644A /* Products */,
+				C780B3BB185715230023B745 /* Project.xcconfig */,
+				C9C772A21C6BF338E720F17C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C752D6FF17462C7B008B644A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C752D6FE17462C7B008B644A /* libIRKit.a */,
+				C79DE3B9176F25260088679E /* IRKit.bundle */,
+				C735040D17A029C30057D51B /* IRKitViewSamples.app */,
+				C7E4EBA318B20EB4008711EF /* IRKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C752D70017462C7B008B644A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C720E6F718B21265009A5AB1 /* CoreTelephony.framework */,
+				C720E6F518B21244009A5AB1 /* libPods.a */,
+				C7E4EB9D18B20E44008711EF /* XCTest.framework */,
+				C75CF06518506D7E0086ED4F /* MediaPlayer.framework */,
+				C75CF061185061180086ED4F /* SystemConfiguration.framework */,
+				C7756777184B23A100C6D4DB /* libPods.a */,
+				C7AB0524180ADD40007288EB /* AudioToolbox.framework */,
+				C7AB0522180ADCEA007288EB /* AudioUnit.framework */,
+				C7D0560F18041E3F00660217 /* AVFoundation.framework */,
+				C7B741B81803FA22005802A7 /* libc++.dylib */,
+				C714890E17C46D6E00713890 /* libstdc++.dylib */,
+				C75CFC8717A6671200870A1B /* QuartzCore.framework */,
+				C79DE3B3176F20B50088679E /* UIKit.framework */,
+				C79DE3B1176F20A30088679E /* CoreGraphics.framework */,
+				C752D70117462C7B008B644A /* Foundation.framework */,
+				C752D71017462C7B008B644A /* SenTestingKit.framework */,
+				C7C7A317176F0FC400C9A62F /* CoreFoundation.framework */,
+				5D1421C9FA864A43B9FEE98B /* libPods-IRKitTests.a */,
+				AA3DB3D2F2D998FD2DB325D2 /* libPods-IRKitViewSamples.a */,
+				8EEDD2CC6F3E254B432C1FDF /* libPods-IRKit.a */,
+				C7E99F009D3309AF0F309E7D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C752D70317462C7B008B644A /* IRKit */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1A38618EEA75100EFB915 /* persistentstore */,
+				C7C14F19180FEA070025B865 /* dependencies */,
+				C73CB4DB17856CD100B3F2C0 /* operation */,
+				C7C7A308176EFC7300C9A62F /* viewcontrollers */,
+				C727D2291754FBC20006810C /* cells */,
+				C7C7A30A176EFC9A00C9A62F /* views */,
+				C75B5686174A7AB100FFE5CB /* IRSignals.m */,
+				C75B5687174A7AB100FFE5CB /* IRSignals.h */,
+				C75B5688174A7AB200FFE5CB /* IRSignal.m */,
+				C75B5689174A7AB200FFE5CB /* IRSignal.h */,
+				C727C87818B5DEEE00867C1A /* IRSignalSequence.h */,
+				C727C87918B5DEEE00867C1A /* IRSignalSequence.m */,
+				C7554F401749F2E000BDF920 /* IRPeripherals.h */,
+				C7554F411749F2E000BDF920 /* IRPeripherals.m */,
+				C76CCA8218EAD5BE00644C0E /* IRPeripherals+UIKit.h */,
+				C76CCA8318EAD5BE00644C0E /* IRPeripherals+UIKit.m */,
+				C7554F301749E65B00BDF920 /* IRPeripheral.h */,
+				C7554F311749E65B00BDF920 /* IRPeripheral.m */,
+				C7FAB0251746889000125BCB /* IRConst.h */,
+				C73E37E5174DF20300872C04 /* IRHelper.h */,
+				C73E37E6174DF20300872C04 /* IRHelper.m */,
+				C76CCA7E18EAD53200644C0E /* IRViewHelper.h */,
+				C76CCA7F18EAD53200644C0E /* IRViewHelper.m */,
+				C701BEC0182BA72C00C31F4B /* IRKeys.h */,
+				C701BEC1182BA72C00C31F4B /* IRKeys.m */,
+				C752D70617462C7B008B644A /* IRKit.h */,
+				C752D70817462C7B008B644A /* IRKit.m */,
+				C7AFAB5718EEB085001F4C87 /* IRKit+Internal.h */,
+				C7AFAB5818EEB085001F4C87 /* IRKit+Internal.m */,
+				C703E826183DFA6900B8446C /* IRHTTPClient.h */,
+				C703E827183DFA6900B8446C /* IRHTTPClient.m */,
+				C7B544EF18EBDD9200B54504 /* IRHTTPClient+UIKit.h */,
+				C7B544F018EBDD9200B54504 /* IRHTTPClient+UIKit.m */,
+				C703E829183E0DD900B8446C /* CRC8.c */,
+				C703E82B183E0DF600B8446C /* CRC8.h */,
+				C79C5947183F5E49002136CD /* IRSearcher.h */,
+				C79C5948183F5E49002136CD /* IRSearcher.m */,
+				C7BD941A18D7024F008C9C72 /* IRReachability.h */,
+				C7BD941B18D7024F008C9C72 /* IRReachability.m */,
+				C752D70417462C7B008B644A /* Supporting Files */,
+			);
+			path = IRKit;
+			sourceTree = "<group>";
+		};
+		C752D70417462C7B008B644A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7FAB02017467CBF00125BCB /* Log.h */,
+				C7FAB02117467CBF00125BCB /* Log.m */,
+				C752D70517462C7B008B644A /* IRKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C79DE3BB176F25260088679E /* IRKitResources */ = {
+			isa = PBXGroup;
+			children = (
+				C79DE3C5176F25750088679E /* Resources */,
+				C79DE3BD176F25260088679E /* IRKitResources-Info.plist */,
+			);
+			path = IRKitResources;
+			sourceTree = "<group>";
+		};
+		C79DE3C5176F25750088679E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1378D18D6C688000FD522 /* bg_progress@2x.png */,
+				C751C38918C888A900F3DD81 /* img_connect_02_jp@2x.png */,
+				C751C38A18C888A900F3DD81 /* img_connect_01_jp@2x.png */,
+				C7B4EBD118C715C500AB2E46 /* img_connect_01@2x.png */,
+				C7B4EBD218C715C500AB2E46 /* img_connect_02@2x.png */,
+				C7B4EBD418C715C500AB2E46 /* icn_chart_01@2x.png */,
+				C7B4EBD318C715C500AB2E46 /* icn_chart_02@2x.png */,
+				C79CCB4E185356EA00ECB707 /* anime_20@2x.png */,
+				C79CCB4F185356EA00ECB707 /* anime_19@2x.png */,
+				C79CCB50185356EA00ECB707 /* anime_18@2x.png */,
+				C79CCB51185356EA00ECB707 /* anime_17@2x.png */,
+				C79CCB52185356EA00ECB707 /* anime_16@2x.png */,
+				C79CCB53185356EA00ECB707 /* anime_15@2x.png */,
+				C79CCB54185356EA00ECB707 /* anime_14@2x.png */,
+				C79CCB55185356EA00ECB707 /* anime_13@2x.png */,
+				C79CCB56185356EA00ECB707 /* anime_12@2x.png */,
+				C79CCB57185356EA00ECB707 /* anime_11@2x.png */,
+				C79CCB58185356EA00ECB707 /* anime_10@2x.png */,
+				C79CCB59185356EA00ECB707 /* anime_08@2x.png */,
+				C79CCB5A185356EA00ECB707 /* anime_09@2x.png */,
+				C79CCB5B185356EA00ECB707 /* anime_07@2x.png */,
+				C79CCB5C185356EA00ECB707 /* anime_06@2x.png */,
+				C79CCB5D185356EA00ECB707 /* anime_05@2x.png */,
+				C79CCB5E185356EA00ECB707 /* anime_04@2x.png */,
+				C79CCB5F185356EA00ECB707 /* anime_03@2x.png */,
+				C79CCB60185356EA00ECB707 /* anime_02@2x.png */,
+				C79CCB61185356EA00ECB707 /* anime_01@2x.png */,
+				C721651B18521C80000BD43D /* Localizable.strings */,
+				C7AC32111850A64200BB190D /* img_remote3@2x.png */,
+				C75CF063185062600086ED4F /* img_powerup3@2x.png */,
+				C7693F8517A12AF900EC43FC /* icn_arrow@2x.png */,
+				C707ECCA184C7C6D00AC5F0B /* icn_check2@2x.png */,
+				C7A1350617AA5D7300C8679B /* icn_device@2x.png */,
+				C707ECCB184C7C6D00AC5F0B /* icn_navibar_add@2x.png */,
+				C707ECCC184C7C6D00AC5F0B /* icn_navibar_back@2x.png */,
+				C707ECCE184C7C6E00AC5F0B /* icn_navibar_camera@2x.png */,
+				C707ECCD184C7C6D00AC5F0B /* icn_navibar_cancel@2x.png */,
+				C707ECC9184C7C6D00AC5F0B /* icn_navibar_menu@2x.png */,
+				C7A1350317AA5D3A00C8679B /* icn_signal.png */,
+				C7A1350217AA5D3A00C8679B /* icn_signal@2x.png */,
+				C78F6FE5182B8D89002AAC7B /* IREditCell.xib */,
+				C7E4E31F18520C6B00EC864E /* IRGuidePowerViewController.xib */,
+				C7E4E33118520CAB00EC864E /* IRWifiEditViewController.xib */,
+				C701BEBB182B9F5C00C31F4B /* IRWifiSecuritySelectViewController.xib */,
+				C77E1982187861F000B457C3 /* IRGuideWifiViewController.xib */,
+				C7E4E32B18520CA300EC864E /* IRPeripheralNameEditViewController.xib */,
+				C7E4E32818520C9D00EC864E /* IRNewSignalScene1ViewController.xib */,
+				C7E4E32E18520CA700EC864E /* IRSignalNameEditViewController.xib */,
+				C78EA54718F6B68100987A25 /* IRFAQViewController.xib */,
+				C75CFC8517A65E1C00870A1B /* IRPeripheralCell.xib */,
+				C772C4CF18D5E53E00EF819D /* IRProgressView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7B1A38618EEA75100EFB915 /* persistentstore */ = {
+			isa = PBXGroup;
+			children = (
+				C73E37E2174DB9AE00872C04 /* IRUserDefaultsStore.h */,
+				C73E37E3174DB9AE00872C04 /* IRUserDefaultsStore.m */,
+				C7B1A38718EEA79500EFB915 /* IRPersistentStore.h */,
+			);
+			name = persistentstore;
+			sourceTree = "<group>";
+		};
+		C7C14F19180FEA070025B865 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = dependencies;
+			sourceTree = "<group>";
+		};
+		C7C7A308176EFC7300C9A62F /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				C77150F71772DF4A004F9FE3 /* IRNewSignalViewController.m */,
+				C77150F81772DF4A004F9FE3 /* IRNewSignalViewController.h */,
+				C7AB418B179530D300E934C3 /* IRNewSignalScene1ViewController.m */,
+				C7AB418A179530D300E934C3 /* IRNewSignalScene1ViewController.h */,
+				C7603E8917A9FAE000A7AF1E /* IRSignalNameEditViewController.m */,
+				C7603E8A17A9FAE000A7AF1E /* IRSignalNameEditViewController.h */,
+				C7C7A305176EFC6C00C9A62F /* IRNewPeripheralViewController.m */,
+				C7C7A306176EFC6C00C9A62F /* IRNewPeripheralViewController.h */,
+				C7C7A30C176F05C500C9A62F /* IRGuidePowerViewController.m */,
+				C7C7A30D176F05C500C9A62F /* IRGuidePowerViewController.h */,
+				C78F6FDF182B8134002AAC7B /* IRWifiEditViewController.m */,
+				C78F6FE0182B8134002AAC7B /* IRWifiEditViewController.h */,
+				C701BEBD182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.m */,
+				C701BEBE182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.h */,
+				C77E1976187859D700B457C3 /* IRGuideWifiViewController.m */,
+				C77E1975187859D700B457C3 /* IRGuideWifiViewController.h */,
+				C77150ED17728F9C004F9FE3 /* IRPeripheralNameEditViewController.m */,
+				C77150EE17728F9C004F9FE3 /* IRPeripheralNameEditViewController.h */,
+				C78EA54918F6B7CA00987A25 /* IRFAQViewController.h */,
+				C78EA54A18F6B7CA00987A25 /* IRFAQViewController.m */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		C7C7A30A176EFC9A00C9A62F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C7603E8317A8BC6F00A7AF1E /* IRViewCustomizer.m */,
+				C7603E8217A8BC6F00A7AF1E /* IRViewCustomizer.h */,
+				C772C4D218D5E59100EF819D /* IRProgressView.m */,
+				C772C4D118D5E59100EF819D /* IRProgressView.h */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		C7E4EBA718B20EB5008711EF /* IRKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7E4EBA818B20EB5008711EF /* Supporting Files */,
+				C727C87C18B5E37B00867C1A /* XCTestCase+Async.m */,
+				C727C87D18B5E37B00867C1A /* XCTestCase+Async.h */,
+				C7E4EBAD18B20EB5008711EF /* IRKitTests.m */,
+				C727C87F18B5E6A700867C1A /* IRKitTests.h */,
+				C720E6EB18B2108A009A5AB1 /* IRSignalTests.m */,
+				C7040C7818B36295006BEDAC /* IRSignalsTests.m */,
+				C727C87618B5DE8300867C1A /* IRSignalSequenceTests.m */,
+				C7E2126B18D6F4B900D1059E /* IRReachabilityTests.m */,
+			);
+			path = IRKitTests;
+			sourceTree = "<group>";
+		};
+		C7E4EBA818B20EB5008711EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7E4EBA918B20EB5008711EF /* IRKitTests-Info.plist */,
+				C7E4EBAA18B20EB5008711EF /* InfoPlist.strings */,
+				C7E4EBAF18B20EB5008711EF /* IRKitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C772A21C6BF338E720F17C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E2BC135F55832C5D0C833B0 /* Pods.debug.xcconfig */,
+				3D5ACDCE91F5EBAD599144C9 /* Pods.release.xcconfig */,
+				00F878B05C67F9BF54E9E7B3 /* Pods-IRKitTests.debug.xcconfig */,
+				C27309377994DCB43F160E52 /* Pods-IRKitTests.release.xcconfig */,
+				3E31DE5C5CF50CFF5C3EEA43 /* Pods-IRKitViewSamples.debug.xcconfig */,
+				5EBBEFDB8DC13EAAD3FC68F7 /* Pods-IRKitViewSamples.release.xcconfig */,
+				6DD118DA3E7228172FE7DD1E /* Pods-IRKit.debug.xcconfig */,
+				8D8F836D74F2E58D206B44EF /* Pods-IRKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C71B3F2A1875C245001CE2DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71B3F2B1875C279001CE2DA /* IRKit.h in Headers */,
+				C7E07C5B1875D3BE00901967 /* IRSignalSendOperationQueue.h in Headers */,
+				C76CCA8018EAD53200644C0E /* IRViewHelper.h in Headers */,
+				C7E07C5C1875D3BE00901967 /* IRSignalSendOperation.h in Headers */,
+				C7E07C611875D3BE00901967 /* IRHTTPJSONOperation.h in Headers */,
+				C7E07C621875D3BE00901967 /* IRHTTPOperationQueue.h in Headers */,
+				C7E07C631875D3BE00901967 /* IRNewSignalViewController.h in Headers */,
+				C727C87A18B5DEEE00867C1A /* IRSignalSequence.h in Headers */,
+				C7E07C641875D3BE00901967 /* IRNewSignalScene1ViewController.h in Headers */,
+				C7E07C651875D3BE00901967 /* IRSignalNameEditViewController.h in Headers */,
+				C7E07C661875D3BE00901967 /* IRNewPeripheralViewController.h in Headers */,
+				C7E07C671875D3BE00901967 /* IRGuidePowerViewController.h in Headers */,
+				C7E07C681875D3BE00901967 /* IRWifiEditViewController.h in Headers */,
+				C7E07C691875D3BE00901967 /* IRWifiSecuritySelectViewController.h in Headers */,
+				C772C4D318D5E59100EF819D /* IRProgressView.h in Headers */,
+				C7E07C6C1875D3BE00901967 /* IRPeripheralNameEditViewController.h in Headers */,
+				C7E07C6D1875D3BE00901967 /* IREditCell.h in Headers */,
+				C7E07C6E1875D3BE00901967 /* IRPeripheralCell.h in Headers */,
+				C7E07C6F1875D3BE00901967 /* IRViewCustomizer.h in Headers */,
+				C76CCA8418EAD5BE00644C0E /* IRPeripherals+UIKit.h in Headers */,
+				C7BD941C18D7024F008C9C72 /* IRReachability.h in Headers */,
+				C7E07C701875D3BE00901967 /* IRSignals.h in Headers */,
+				C7E07C711875D3BE00901967 /* IRSignal.h in Headers */,
+				C7E07C721875D3BE00901967 /* IRPeripherals.h in Headers */,
+				C7E07C731875D3BE00901967 /* IRPeripheral.h in Headers */,
+				C7AFAB5918EEB085001F4C87 /* IRKit+Internal.h in Headers */,
+				C7B544F118EBDD9200B54504 /* IRHTTPClient+UIKit.h in Headers */,
+				C7E07C791875D3BE00901967 /* IRHTTPClient.h in Headers */,
+				C7E07C751875D3BE00901967 /* IRConst.h in Headers */,
+				C7E07C761875D3BE00901967 /* IRUserDefaultsStore.h in Headers */,
+				C78EA54B18F6B7CA00987A25 /* IRFAQViewController.h in Headers */,
+				C7E07C771875D3BE00901967 /* IRHelper.h in Headers */,
+				C7E07C781875D3BE00901967 /* IRKeys.h in Headers */,
+				C7E07C7A1875D3BE00901967 /* CRC8.h in Headers */,
+				C7E07C7B1875D3BE00901967 /* IRSearcher.h in Headers */,
+				C77E1977187859D700B457C3 /* IRGuideWifiViewController.h in Headers */,
+				C7E07C7C1875D3BE00901967 /* Log.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C735040C17A029C30057D51B /* IRKitViewSamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C735042917A029C40057D51B /* Build configuration list for PBXNativeTarget "IRKitViewSamples" */;
+			buildPhases = (
+				C735040917A029C30057D51B /* Sources */,
+				C735040A17A029C30057D51B /* Frameworks */,
+				C735040B17A029C30057D51B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7526FAA18C75D80000A3F54 /* PBXTargetDependency */,
+				C735043917A038FB0057D51B /* PBXTargetDependency */,
+			);
+			name = IRKitViewSamples;
+			productName = IRKitViewSamples;
+			productReference = C735040D17A029C30057D51B /* IRKitViewSamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C752D6FD17462C7B008B644A /* IRKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C752D72317462C7B008B644A /* Build configuration list for PBXNativeTarget "IRKit" */;
+			buildPhases = (
+				677F09D292AB01FA12FA25C4 /* Check Pods Manifest.lock */,
+				C752D6FA17462C7B008B644A /* Sources */,
+				C752D6FB17462C7B008B644A /* Frameworks */,
+				C752D6FC17462C7B008B644A /* CopyFiles */,
+				C71B3F2A1875C245001CE2DA /* Headers */,
+				C71B3F291875C104001CE2DA /* ShellScript */,
+				61CD0ED540CA9CA8CA7295E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C79DE3C9176F271A0088679E /* PBXTargetDependency */,
+			);
+			name = IRKit;
+			productName = IRKit;
+			productReference = C752D6FE17462C7B008B644A /* libIRKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C79DE3B8176F25260088679E /* IRKitResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79DE3C2176F25260088679E /* Build configuration list for PBXNativeTarget "IRKitResources" */;
+			buildPhases = (
+				C79DE3B5176F25260088679E /* Sources */,
+				C79DE3B6176F25260088679E /* Frameworks */,
+				C79DE3B7176F25260088679E /* Resources */,
+				C735043717A0361C0057D51B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRKitResources;
+			productName = IRKitResources;
+			productReference = C79DE3B9176F25260088679E /* IRKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C7E4EBA218B20EB4008711EF /* IRKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E4EBB218B20EB5008711EF /* Build configuration list for PBXNativeTarget "IRKitTests" */;
+			buildPhases = (
+				157FE976C9C744A38220A322 /* Check Pods Manifest.lock */,
+				C7E4EB9F18B20EB4008711EF /* Sources */,
+				C7E4EBA018B20EB4008711EF /* Frameworks */,
+				C7E4EBA118B20EB4008711EF /* Resources */,
+				ACDF22ED334D4A7F9D1D2070 /* Copy Pods Resources */,
+				0126C7CC60D1FCCC56F49026 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7E4EBB118B20EB5008711EF /* PBXTargetDependency */,
+			);
+			name = IRKitTests;
+			productName = IRKitTests;
+			productReference = C7E4EBA318B20EB4008711EF /* IRKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C752D6F617462C7B008B644A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					C7E4EBA218B20EB4008711EF = {
+						TestTargetID = C752D6FD17462C7B008B644A;
+					};
+				};
+			};
+			buildConfigurationList = C752D6F917462C7B008B644A /* Build configuration list for PBXProject "IRKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = C752D6F517462C7B008B644A;
+			productRefGroup = C752D6FF17462C7B008B644A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C752D6FD17462C7B008B644A /* IRKit */,
+				C79DE3B8176F25260088679E /* IRKitResources */,
+				C735040C17A029C30057D51B /* IRKitViewSamples */,
+				C71B3F2C1875C2BE001CE2DA /* Framework */,
+				C7E4EBA218B20EB4008711EF /* IRKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C735040B17A029C30057D51B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C735043517A0341D0057D51B /* IRKit.bundle in Resources */,
+				C735041617A029C40057D51B /* InfoPlist.strings in Resources */,
+				C735041E17A029C40057D51B /* Default.png in Resources */,
+				C735042017A029C40057D51B /* Default@2x.png in Resources */,
+				C735042217A029C40057D51B /* Default-568h@2x.png in Resources */,
+				C735042517A029C40057D51B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79DE3B7176F25260088679E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78F6FE6182B8D89002AAC7B /* IREditCell.xib in Resources */,
+				C79CCB6D185356EA00ECB707 /* anime_08@2x.png in Resources */,
+				C79CCB65185356EA00ECB707 /* anime_17@2x.png in Resources */,
+				C707ECCF184C7C6E00AC5F0B /* icn_navibar_menu@2x.png in Resources */,
+				C79CCB6A185356EA00ECB707 /* anime_12@2x.png in Resources */,
+				C772C4D018D5E53E00EF819D /* IRProgressView.xib in Resources */,
+				C707ECD1184C7C6E00AC5F0B /* icn_navibar_add@2x.png in Resources */,
+				C7B4EBD718C715C500AB2E46 /* icn_chart_02@2x.png in Resources */,
+				C707ECD2184C7C6E00AC5F0B /* icn_navibar_back@2x.png in Resources */,
+				C7B4EBD518C715C500AB2E46 /* img_connect_01@2x.png in Resources */,
+				C79CCB6F185356EA00ECB707 /* anime_07@2x.png in Resources */,
+				C75CF064185062600086ED4F /* img_powerup3@2x.png in Resources */,
+				C79CCB75185356EA00ECB707 /* anime_01@2x.png in Resources */,
+				C79CCB71185356EA00ECB707 /* anime_05@2x.png in Resources */,
+				C7E4E31D18520C6B00EC864E /* IRGuidePowerViewController.xib in Resources */,
+				C7E4E32F18520CAB00EC864E /* IRWifiEditViewController.xib in Resources */,
+				C707ECD0184C7C6E00AC5F0B /* icn_check2@2x.png in Resources */,
+				C77E1980187861F000B457C3 /* IRGuideWifiViewController.xib in Resources */,
+				C751C38C18C888A900F3DD81 /* img_connect_01_jp@2x.png in Resources */,
+				C7E4E32918520CA300EC864E /* IRPeripheralNameEditViewController.xib in Resources */,
+				C707ECD4184C7C6E00AC5F0B /* icn_navibar_camera@2x.png in Resources */,
+				C7E4E32618520C9D00EC864E /* IRNewSignalScene1ViewController.xib in Resources */,
+				C721651D18521C80000BD43D /* Localizable.strings in Resources */,
+				C7693F8717A12AF900EC43FC /* icn_arrow@2x.png in Resources */,
+				C75CFC8617A65E1C00870A1B /* IRPeripheralCell.xib in Resources */,
+				C79CCB6E185356EA00ECB707 /* anime_09@2x.png in Resources */,
+				C701BEBC182B9F5C00C31F4B /* IRWifiSecuritySelectViewController.xib in Resources */,
+				C79CCB6B185356EA00ECB707 /* anime_11@2x.png in Resources */,
+				C7E4E32C18520CA700EC864E /* IRSignalNameEditViewController.xib in Resources */,
+				C7A1350417AA5D3A00C8679B /* icn_signal@2x.png in Resources */,
+				C7A1378E18D6C688000FD522 /* bg_progress@2x.png in Resources */,
+				C78EA54818F6B68100987A25 /* IRFAQViewController.xib in Resources */,
+				C79CCB73185356EA00ECB707 /* anime_03@2x.png in Resources */,
+				C79CCB72185356EA00ECB707 /* anime_04@2x.png in Resources */,
+				C79CCB6C185356EA00ECB707 /* anime_10@2x.png in Resources */,
+				C7B4EBD618C715C500AB2E46 /* img_connect_02@2x.png in Resources */,
+				C79CCB70185356EA00ECB707 /* anime_06@2x.png in Resources */,
+				C79CCB62185356EA00ECB707 /* anime_20@2x.png in Resources */,
+				C7A1350517AA5D3A00C8679B /* icn_signal.png in Resources */,
+				C79CCB64185356EA00ECB707 /* anime_18@2x.png in Resources */,
+				C707ECD3184C7C6E00AC5F0B /* icn_navibar_cancel@2x.png in Resources */,
+				C751C38B18C888A900F3DD81 /* img_connect_02_jp@2x.png in Resources */,
+				C79CCB68185356EA00ECB707 /* anime_14@2x.png in Resources */,
+				C79CCB69185356EA00ECB707 /* anime_13@2x.png in Resources */,
+				C7A1350817AA5D7300C8679B /* icn_device@2x.png in Resources */,
+				C79CCB74185356EA00ECB707 /* anime_02@2x.png in Resources */,
+				C7B4EBD818C715C500AB2E46 /* icn_chart_01@2x.png in Resources */,
+				C7AC32121850A64200BB190D /* img_remote3@2x.png in Resources */,
+				C79CCB66185356EA00ECB707 /* anime_16@2x.png in Resources */,
+				C79CCB67185356EA00ECB707 /* anime_15@2x.png in Resources */,
+				C79CCB63185356EA00ECB707 /* anime_19@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E4EBA118B20EB4008711EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E4EBAC18B20EB5008711EF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0126C7CC60D1FCCC56F49026 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IRKitTests/Pods-IRKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		157FE976C9C744A38220A322 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61CD0ED540CA9CA8CA7295E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		677F09D292AB01FA12FA25C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDF22ED334D4A7F9D1D2070 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IRKitTests/Pods-IRKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71B3F291875C104001CE2DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		C71B3F321875C2E1001CE2DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
+		C735043717A0361C0057D51B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -ex\nCOMMAND=\"cp -r ${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME} ${PROJECT_DIR}/\"\necho $COMMAND\n$COMMAND\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C735040917A029C30057D51B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C735041817A029C40057D51B /* main.m in Sources */,
+				C735041C17A029C40057D51B /* IRAppDelegate.m in Sources */,
+				C735042E17A02B0D0057D51B /* IRSamplesTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C752D6FA17462C7B008B644A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C701BEBF182B9F6D00C31F4B /* IRWifiSecuritySelectViewController.m in Sources */,
+				C752D70917462C7B008B644A /* IRKit.m in Sources */,
+				C7FAB02217467CBF00125BCB /* Log.m in Sources */,
+				C7554F321749E65B00BDF920 /* IRPeripheral.m in Sources */,
+				C7554F421749F2E000BDF920 /* IRPeripherals.m in Sources */,
+				C75B5682174A405B00FFE5CB /* IRPeripheralCell.m in Sources */,
+				C79C5949183F5E49002136CD /* IRSearcher.m in Sources */,
+				C78F6FE1182B8134002AAC7B /* IRWifiEditViewController.m in Sources */,
+				C703E828183DFA6900B8446C /* IRHTTPClient.m in Sources */,
+				C7B544F218EBDD9200B54504 /* IRHTTPClient+UIKit.m in Sources */,
+				C75B568A174A7AB200FFE5CB /* IRSignals.m in Sources */,
+				C75B568B174A7AB200FFE5CB /* IRSignal.m in Sources */,
+				C73E37E4174DB9AE00872C04 /* IRUserDefaultsStore.m in Sources */,
+				C701BEC2182BA72C00C31F4B /* IRKeys.m in Sources */,
+				C73E37E7174DF20300872C04 /* IRHelper.m in Sources */,
+				C7C7A307176EFC6C00C9A62F /* IRNewPeripheralViewController.m in Sources */,
+				C7C7A30E176F05C500C9A62F /* IRGuidePowerViewController.m in Sources */,
+				C76CCA8518EAD5BE00644C0E /* IRPeripherals+UIKit.m in Sources */,
+				C77150EF17728F9C004F9FE3 /* IRPeripheralNameEditViewController.m in Sources */,
+				C77150F91772DF4A004F9FE3 /* IRNewSignalViewController.m in Sources */,
+				C772C4D418D5E59100EF819D /* IRProgressView.m in Sources */,
+				C727C87B18B5DEEE00867C1A /* IRSignalSequence.m in Sources */,
+				C7BD941D18D7024F008C9C72 /* IRReachability.m in Sources */,
+				C78F6FE9182B8E77002AAC7B /* IREditCell.m in Sources */,
+				C7AFAB5A18EEB085001F4C87 /* IRKit+Internal.m in Sources */,
+				C703E82A183E0DD900B8446C /* CRC8.c in Sources */,
+				C78EA54C18F6B7CA00987A25 /* IRFAQViewController.m in Sources */,
+				C7AB418C179530D300E934C3 /* IRNewSignalScene1ViewController.m in Sources */,
+				C7A66E9017A7BB3B00EDE589 /* IRSignalSendOperationQueue.m in Sources */,
+				C7603E8417A8BC6F00A7AF1E /* IRViewCustomizer.m in Sources */,
+				C7603E8B17A9FAE100A7AF1E /* IRSignalNameEditViewController.m in Sources */,
+				C7FFC7C8184CCE790007B178 /* IRHTTPJSONOperation.m in Sources */,
+				C7CEF3B9186172DB00B665DA /* IRHTTPOperationQueue.m in Sources */,
+				C77E1978187859D700B457C3 /* IRGuideWifiViewController.m in Sources */,
+				C7B5495C17ABD5DA005D91D1 /* IRSignalSendOperation.m in Sources */,
+				C76CCA8118EAD53200644C0E /* IRViewHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79DE3B5176F25260088679E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E4EB9F18B20EB4008711EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C720E6EC18B2108A009A5AB1 /* IRSignalTests.m in Sources */,
+				C7E2126C18D6F4B900D1059E /* IRReachabilityTests.m in Sources */,
+				C7040C7918B36295006BEDAC /* IRSignalsTests.m in Sources */,
+				C7E4EBAE18B20EB5008711EF /* IRKitTests.m in Sources */,
+				C727C87E18B5E37B00867C1A /* XCTestCase+Async.m in Sources */,
+				C727C87718B5DE8300867C1A /* IRSignalSequenceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C71B3F311875C2CB001CE2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C752D6FD17462C7B008B644A /* IRKit */;
+			targetProxy = C71B3F301875C2CB001CE2DA /* PBXContainerItemProxy */;
+		};
+		C71B3F341875C451001CE2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C79DE3B8176F25260088679E /* IRKitResources */;
+			targetProxy = C71B3F331875C451001CE2DA /* PBXContainerItemProxy */;
+		};
+		C735043917A038FB0057D51B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C79DE3B8176F25260088679E /* IRKitResources */;
+			targetProxy = C735043817A038FB0057D51B /* PBXContainerItemProxy */;
+		};
+		C7526FAA18C75D80000A3F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C752D6FD17462C7B008B644A /* IRKit */;
+			targetProxy = C7526FA918C75D80000A3F54 /* PBXContainerItemProxy */;
+		};
+		C79DE3C9176F271A0088679E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C79DE3B8176F25260088679E /* IRKitResources */;
+			targetProxy = C79DE3C8176F271A0088679E /* PBXContainerItemProxy */;
+		};
+		C7E4EBB118B20EB5008711EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C752D6FD17462C7B008B644A /* IRKit */;
+			targetProxy = C7E4EBB018B20EB5008711EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C721651B18521C80000BD43D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C721651C18521C80000BD43D /* ja */,
+				C70088D0186170BC00A2C878 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C735041417A029C40057D51B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C735041517A029C40057D51B /* en */,
+				C7E4E343185210C900EC864E /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C735042317A029C40057D51B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4E339185210BC00EC864E /* Base */,
+				C7E4E341185210C900EC864E /* ja */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C77E1982187861F000B457C3 /* IRGuideWifiViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77E1981187861F000B457C3 /* Base */,
+				C751C38818C8867E00F3DD81 /* ja */,
+			);
+			name = IRGuideWifiViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E4E31F18520C6B00EC864E /* IRGuidePowerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4E332185210BC00EC864E /* Base */,
+				C7E4E33A185210C900EC864E /* ja */,
+			);
+			name = IRGuidePowerViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E4E32818520C9D00EC864E /* IRNewSignalScene1ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4E337185210BC00EC864E /* Base */,
+				C75AE4E419138774008F9A50 /* ja */,
+			);
+			name = IRNewSignalScene1ViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E4E32B18520CA300EC864E /* IRPeripheralNameEditViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4E336185210BC00EC864E /* Base */,
+				C7E4E33E185210C900EC864E /* ja */,
+			);
+			name = IRPeripheralNameEditViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E4E32E18520CA700EC864E /* IRSignalNameEditViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4E338185210BC00EC864E /* Base */,
+				C7E4E340185210C900EC864E /* ja */,
+			);
+			name = IRSignalNameEditViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E4E33118520CAB00EC864E /* IRWifiEditViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4E333185210BC00EC864E /* Base */,
+				C7E4E33B185210C900EC864E /* ja */,
+			);
+			name = IRWifiEditViewController.xib;
+			sourceTree = "<group>";
+		};
+		C7E4EBAA18B20EB5008711EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E4EBAB18B20EB5008711EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C71B3F2E1875C2BE001CE2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C71B3F2F1875C2BE001CE2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C735042A17A029C40057D51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E31DE5C5CF50CFF5C3EEA43 /* Pods-IRKitViewSamples.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRKitViewSamples/IRKitViewSamples-Prefix.pch";
+				INFOPLIST_FILE = "IRKitViewSamples/IRKitViewSamples-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C735042B17A029C40057D51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EBBEFDB8DC13EAAD3FC68F7 /* Pods-IRKitViewSamples.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRKitViewSamples/IRKitViewSamples-Prefix.pch";
+				INFOPLIST_FILE = "IRKitViewSamples/IRKitViewSamples-Info.plist";
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C752D72117462C7B008B644A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2BC135F55832C5D0C833B0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"IRKIT_DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		C752D72217462C7B008B644A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5ACDCE91F5EBAD599144C9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIP_STYLE = "non-global";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		C752D72417462C7B008B644A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2BC135F55832C5D0C833B0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/IRKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRKit/IRKit-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C752D72517462C7B008B644A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5ACDCE91F5EBAD599144C9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/IRKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRKit/IRKit-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C79DE3C3176F25260088679E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "IRKitResources/IRKitResources-Info.plist";
+				PRODUCT_NAME = IRKit;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C79DE3C4176F25260088679E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "IRKitResources/IRKitResources-Info.plist";
+				PRODUCT_NAME = IRKit;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C7E4EBB318B20EB5008711EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F878B05C67F9BF54E9E7B3 /* Pods-IRKitTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRKitTests/IRKitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "IRKitTests/IRKitTests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C7E4EBB418B20EB5008711EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27309377994DCB43F160E52 /* Pods-IRKitTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRKitTests/IRKitTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "IRKitTests/IRKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C71B3F2D1875C2BE001CE2DA /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71B3F2E1875C2BE001CE2DA /* Debug */,
+				C71B3F2F1875C2BE001CE2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C735042917A029C40057D51B /* Build configuration list for PBXNativeTarget "IRKitViewSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C735042A17A029C40057D51B /* Debug */,
+				C735042B17A029C40057D51B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752D6F917462C7B008B644A /* Build configuration list for PBXProject "IRKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752D72117462C7B008B644A /* Debug */,
+				C752D72217462C7B008B644A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C752D72317462C7B008B644A /* Build configuration list for PBXNativeTarget "IRKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C752D72417462C7B008B644A /* Debug */,
+				C752D72517462C7B008B644A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79DE3C2176F25260088679E /* Build configuration list for PBXNativeTarget "IRKitResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79DE3C3176F25260088679E /* Debug */,
+				C79DE3C4176F25260088679E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E4EBB218B20EB5008711EF /* Build configuration list for PBXNativeTarget "IRKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E4EBB318B20EB5008711EF /* Debug */,
+				C7E4EBB418B20EB5008711EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C752D6F617462C7B008B644A /* Project object */;
+}

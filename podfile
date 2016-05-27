@@ -1,0 +1,23 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "7.0"
+workspace 'IRKit'
+xcodeproj 'IRKit/IRKit.xcodeproj'
+
+pod 'ISHTTPOperation', '~> 1.1.0'
+
+target 'Minimal' do
+  xcodeproj 'Minimal/Minimal.xcodeproj'
+end
+
+target 'IRKit' do
+  xcodeproj 'IRKit/IRKit.xcodeproj'
+end
+
+target 'IRKitViewSamples' do
+  xcodeproj 'IRKit/IRKit.xcodeproj'
+end
+
+target 'IRKitTests' do
+  pod 'OHHTTPStubs', '~> 3.0.4'
+  xcodeproj 'IRKit/IRKit.xcodeproj'
+end
